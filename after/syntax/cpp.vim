@@ -266,7 +266,7 @@ syn keyword qClass QXmlStreamNotationDeclaration QXmlStreamReader QXmlStreamWrit
 
 " --- Qt keywords
 "
-syn keyword     cType           SIGNAL SLOT qreal connect
+syn keyword     cType           SIGNAL SLOT qreal connect uint uchar emit
 
 " --- Qt Macros
 "

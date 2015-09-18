@@ -44,12 +44,12 @@ hi StatusLine	guibg=#c2bfa5 guifg=black gui=none
 hi StatusLineNC	guibg=#c2bfa5 guifg=grey50 gui=none
 hi Title	guifg=indianred
 hi Visual	gui=none guifg=khaki guibg=olivedrab
-"hi VisualNOS	
+"hi VisualNOS
 hi WarningMsg	guifg=salmon
-"hi WildMenu	
-"hi Menu				
-"hi Scrollbar	
-"hi Tooltip				
+"hi WildMenu
+"hi Menu
+"hi Scrollbar
+"hi Tooltip
 
 " syntax highlighting groups
 hi Comment	 guifg=gray60
@@ -59,9 +59,9 @@ hi Statement	 guifg=khaki
 hi PreProc	 guifg=indianred
 hi Type		 guifg=darkkhaki
 hi Special	 guifg=navajowhite
-"hi Underlined	
-hi Ignore 	 guifg=grey40
-"hi Error			
+"hi Underlined
+hi Ignore	 guifg=grey40
+"hi Error
 hi Todo		 guifg=orangered guibg=yellow2
 
 " color terminal definitions
@@ -89,7 +89,7 @@ hi DiffAdd       ctermbg=4
 hi DiffChange    ctermbg=5
 hi DiffDelete    cterm=bold ctermfg=4 ctermbg=6
 hi DiffText      cterm=bold ctermbg=1
-hi Comment       ctermfg=23
+hi Comment       ctermfg=25
 hi Constant      ctermfg=173
 hi Special       ctermfg=5
 hi Identifier    ctermfg=6
