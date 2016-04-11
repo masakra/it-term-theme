@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer:   masakra <masakra@mail.ru>
-" Last Change:  $Date: 09.09.2015 (13:16 MSK)
+" Last Change:  $Date: 24.03.2016 (13:19 MSK)
 
 " cool help screens
 " :he group-name
@@ -100,6 +100,7 @@ hi Underlined    cterm=underline ctermfg=5
 hi Ignore        ctermfg=darkgrey
 hi Error         cterm=bold ctermfg=7 ctermbg=1
 hi qClass		 cterm=NONE ctermfg=6
+hi qtMoc		 cterm=NONE ctermfg=220
 
 
 "vim: sw=4

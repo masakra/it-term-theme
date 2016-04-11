@@ -3,7 +3,7 @@
 " Author: masakra
 " License: BSD
 "
-" $Id: cpp.vim,v 0.1 10.09.2015 (15:24 MSK)
+" $Id: cpp.vim,v 0.1 24.03.2016 (13:23 MSK)
 "
 " -- all Qt 5.5 classes
 "
@@ -73,10 +73,10 @@ syn keyword qClass QErrorMessage QEvent QEventLoop QEventLoopLocker QEventTransi
 syn keyword qClass QExposeEvent QExtensionFactory QExtensionManager
 
 " F
-syn keyword qClass QFile QFileDevice QFileDialog QFileIconProvider QFileInfo QFileOpenEvent QFileSelector QFileSystemModel
-syn keyword qClass QFileSystemWatcher QFinalState QFlag QFlags QFocusEvent QFocusFrame QFont QFontComboBox QFontDatabase
-syn keyword qClass QFontDialog QFontInfo QFontMetrics QFontMetricsF QFormBuilder QFormLayout QFrame QFuture QFutureIterator
-syn keyword qClass QFutureSynchronizer QFutureWatcher
+syn keyword qClass QFile QFileDevice QFileDialog QFileIconProvider QFileInfo QFileInfoList QFileOpenEvent QFileSelector
+syn keyword qClass QFileSystemModel QFileSystemWatcher QFinalState QFlag QFlags QFocusEvent QFocusFrame QFont QFontComboBox
+syn keyword qClass QFontDatabase QFontDialog QFontInfo QFontMetrics QFontMetricsF QFormBuilder QFormLayout QFrame QFuture
+syn keyword qClass QFutureIterator QFutureSynchronizer QFutureWatcher
 
 " G
 syn keyword qClass QGLBuffer QGLColormap QGLContext QGLFormat QGLFramebufferObject QGLFramebufferObjectFormat QGLFunctions
@@ -266,13 +266,16 @@ syn keyword qClass QXmlStreamNotationDeclaration QXmlStreamReader QXmlStreamWrit
 
 " --- Qt keywords
 "
-syn keyword     cType           SIGNAL SLOT qreal connect uint uchar emit
+syn keyword     cType           qreal uint uchar ushort
+syn keyword     cType           qint8 qint16 qint32 qint64
 syn keyword     cType           quint8 quint16 quint32 quint64 quintptr
+syn	keyword		qtMoc			Q_OBJECT slots signals SIGNAL SLOT Q_SLOTS Q_SIGNAL connect emit
 
 " --- Qt Macros
 "
-syn keyword     cType           Q_ASSERT Q_CHECK_PTR Q_OBJECT Q_SLOTS Q_SIGNALS
+syn keyword     cType           Q_ASSERT Q_CHECK_PTR
 
-" highlight Qt classes like bulid-in cpp types
+" highlight Qt classes like build-in cpp types
 highlight link qClass Type
+highlight link qtMoc Type
 
