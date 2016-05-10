@@ -240,10 +240,10 @@ syn keyword qClass QTouchEvent QTransform QTranslator QTreeView QTreeWidget QTre
 syn keyword qClass QUdpSocket QUiLoader QUndoCommand QUndoGroup QUndoStack QUndoView QUnhandledException QUrl QUrlQuery QUuid
 
 " V
-syn keyword qClass QVBoxLayout QValidator QVarLengthArray QVariant QVariantAnimation QVector QVector2D QVector3D QVector4D
-syn keyword qClass QVectorIterator QVideoDeviceSelectorControl QVideoEncoderSettings QVideoEncoderSettingsControl
-syn keyword qClass QVideoFilterRunnable QVideoFrame QVideoProbe QVideoRendererControl QVideoSurfaceFormat QVideoWidget
-syn keyword qClass QVideoWidgetControl QVideoWindowControl
+syn keyword qClass QVBoxLayout QValidator QVarLengthArray QVariant QVariantAnimation QVariantHash QVariantList QVariantMap
+syn keyword qClass QVector QVector2D QVector3D QVector4D QVectorIterator QVideoDeviceSelectorControl QVideoEncoderSettings
+syn keyword qClass QVideoEncoderSettingsControl QVideoFilterRunnable QVideoFrame QVideoProbe QVideoRendererControl
+syn keyword qClass QVideoSurfaceFormat QVideoWidget QVideoWidgetControl QVideoWindowControl
 
 " W
 syn keyword qClass QWGLNativeContext QWaitCondition QWeakPointer QWebChannel QWebChannelAbstractTransport QWebDatabase
