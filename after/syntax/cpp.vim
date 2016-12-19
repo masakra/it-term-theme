@@ -267,13 +267,17 @@ syn keyword qClass QXmlStreamNotationDeclaration QXmlStreamReader QXmlStreamWrit
 " --- Qt keywords
 "
 syn keyword     cType           qreal uint uchar ushort
-syn keyword     cType           qint8 qint16 qint32 qint64
+syn keyword     cType           qint8 qint16 qint32 qint64 qintptr
 syn keyword     cType           quint8 quint16 quint32 quint64 quintptr
-syn	keyword		qtMoc			Q_OBJECT slots signals SIGNAL SLOT Q_SLOTS Q_SIGNALS connect emit
+syn	keyword		qtMoc			Q_OBJECT slots signals SIGNAL SLOT Q_SLOTS Q_SIGNALS connect disconnect emit
 
 " --- Qt Macros
 "
-syn keyword     cType           Q_ASSERT Q_CHECK_PTR
+syn keyword     cType           Q_ASSERT Q_CHECK_PTR Q_UNUSED
+
+" --- Qt other
+"
+syn keyword		Statement		qobject_cast
 
 " highlight Qt classes like build-in cpp types
 highlight link qClass Type
