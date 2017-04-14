@@ -21,7 +21,7 @@ let g:colors_name="desertqt5l"
 hi Normal	guifg=White guibg=grey20
 
 " highlight groups
-hi Cursor	guibg=khaki guifg=slategrey
+hi Cursor	guibg=khaki guifg=red
 "hi CursorIM
 "hi Directory
 "hi DiffAdd
@@ -69,14 +69,14 @@ hi SpecialKey    ctermfg=darkgreen
 hi NonText       cterm=bold ctermfg=darkblue
 hi Directory     ctermfg=darkcyan
 hi ErrorMsg      cterm=bold ctermfg=7 ctermbg=1
-hi IncSearch     cterm=NONE ctermfg=yellow ctermbg=green
+hi IncSearch     cterm=NONE ctermfg=yellow ctermbg=blue
 hi Search        cterm=NONE ctermfg=grey ctermbg=blue
 hi MoreMsg       ctermfg=darkgreen
 hi ModeMsg       cterm=NONE ctermfg=brown
 hi LineNr        ctermfg=3
 hi Question      ctermfg=green
-hi StatusLine    cterm=bold,reverse
-hi StatusLineNC  cterm=reverse
+hi StatusLine    ctermfg=gray ctermbg=yellow
+hi StatusLineNC  ctermfg=gray ctermbg=gray
 hi VertSplit     cterm=reverse
 hi Title         ctermfg=5
 hi Visual        cterm=reverse
@@ -90,7 +90,7 @@ hi DiffChange    ctermbg=5
 hi DiffDelete    cterm=bold ctermfg=4 ctermbg=6
 hi DiffText      cterm=bold ctermbg=1
 hi Comment       ctermfg=45
-hi Constant      ctermfg=173
+hi Constant      ctermfg=53
 hi Special       ctermfg=5
 hi Identifier    ctermfg=6
 hi Statement     ctermfg=3
