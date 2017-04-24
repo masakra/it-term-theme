@@ -1,13 +1,13 @@
 " Vim color file
 " Maintainer:   masakra <masakra@mail.ru>
-" Last Change:  $Date: 24.03.2016 (13:19 MSK)
+" Last Change:  $Date: 18.04.2017 (10:39 MSK)
 
 " cool help screens
 " :he group-name
 " :he highlight-groups
 " :he cterm-colors
 
-set background=dark
+"set background=light
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
     " complaining
@@ -18,10 +18,12 @@ if version > 580
 endif
 let g:colors_name="desertqt5l"
 
-hi Normal	guifg=White guibg=grey20
+hi Normal	guifg=grey20 guibg=white
 
 " highlight groups
 hi Cursor	guibg=khaki guifg=red
+hi Cursor	ctermbg=yellow ctermfg=red
+hi iCursor	ctermbg=yellow ctermfg=red
 "hi CursorIM
 "hi Directory
 "hi DiffAdd
@@ -40,8 +42,8 @@ hi NonText	guifg=LightBlue guibg=grey30
 hi Question	guifg=springgreen
 hi Search	guibg=peru guifg=wheat
 hi SpecialKey	guifg=yellowgreen
-hi StatusLine	guibg=#c2bfa5 guifg=black gui=none
-hi StatusLineNC	guibg=#c2bfa5 guifg=grey50 gui=none
+"hi StatusLine	guibg=#c2bfa5 guifg=black gui=none
+"hi StatusLineNC	guibg=#c2bfa5 guifg=white gui=none
 hi Title	guifg=indianred
 hi Visual	gui=none guifg=khaki guibg=olivedrab
 "hi VisualNOS
@@ -75,8 +77,8 @@ hi MoreMsg       ctermfg=darkgreen
 hi ModeMsg       cterm=NONE ctermfg=brown
 hi LineNr        ctermfg=3
 hi Question      ctermfg=green
-hi StatusLine    ctermfg=gray ctermbg=yellow
-hi StatusLineNC  ctermfg=gray ctermbg=gray
+hi StatusLine    ctermfg=gray ctermbg=yellow gui=none
+hi StatusLineNC  ctermfg=gray ctermbg=white gui=none
 hi VertSplit     cterm=reverse
 hi Title         ctermfg=5
 hi Visual        cterm=reverse
@@ -102,5 +104,5 @@ hi Error         cterm=bold ctermfg=7 ctermbg=1
 hi qClass		 cterm=NONE ctermfg=18
 hi qtMoc		 cterm=NONE ctermfg=91
 
-
 "vim: sw=4
+
