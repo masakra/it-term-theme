@@ -317,6 +317,8 @@ syn keyword qClass QXmlName QXmlNamePool QXmlNamespaceSupport QXmlNodeModelIndex
 syn keyword qClass QXmlReader QXmlResultItems QXmlSchema QXmlSchemaValidator QXmlSerializer QXmlSimpleReader
 syn keyword qClass QXmlStreamAttribute QXmlStreamAttributes QXmlStreamEntityDeclaration QXmlStreamEntityResolver QXmlStreamNamespaceDeclaration QXmlStreamNotationDeclaration
 syn keyword qClass QXmlStreamReader QXmlStreamWriter QXYLegendMarker QXYSeries
+" Not Qt classes
+syn keyword qClass QStringLiteral
 
 " --- Qt keywords
 "
