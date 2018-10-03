@@ -6,9 +6,10 @@ There are two files for Qt 5 classes highlighting in vim. Similar to desert colo
 
 ### INSTALL ###
 
-copy files to  
+copy files to  ( or symlinks )
 .vim/after/syntax/cpp.vim  
-.vim/after/colors/desertqt5.vim  
+.vim/after/colors/desertqt5.vim
+.vim/after/colors/neomorph.vim
 
 ### neomorph ###
 fork of neodark
