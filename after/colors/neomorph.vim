@@ -306,6 +306,7 @@ call s:hi('Underlined',                s:base5,      '',         'underline')
 call s:hi('Error',                     s:base2,      s:red,      'bold')
 call s:hi('Todo',                      s:maroon,     s:yellow,   'bold')
 call s:hi('Conceal',                   s:beige,      s:base1,    '')
+call s:hi('My',                        s:beige,      '',         '')
 
 " Languages {{{
 " Vim {{{

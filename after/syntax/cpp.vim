@@ -8,7 +8,7 @@
 " -- all Qt 6.2 classes
 "
 syn keyword qClass Qt
-" 3
+" 3 Qt 6.2
 syn keyword qClass Q3DBars Q3DCamera Q3DInputHandler Q3DLight Q3DObject
 syn keyword qClass Q3DScatter Q3DScene Q3DSurface Q3DTheme
 " A Qt 6.2
@@ -570,21 +570,26 @@ syn keyword qClass QStringLiteral
 
 " --- Qt keywords
 "
-syn keyword     cType           qreal uint uchar ushort qulonglong qlonglong
-syn keyword     cType           qint8 qint16 qint32 qint64 qintptr
-syn keyword     cType           quint8 quint16 quint32 quint64 quintptr
-syn keyword     cType           qsizetype
-syn	keyword		qtMoc			Q_OBJECT slots signals SIGNAL SLOT Q_SLOTS Q_SIGNALS connect disconnect emit
+syn keyword cType qreal uint uchar ushort qulonglong qlonglong
+syn keyword cType qint8 qint16 qint32 qint64 qintptr
+syn keyword cType quint8 quint16 quint32 quint64 quintptr qsizetype
+syn keyword qtMoc Q_OBJECT Q_GADGET SIGNAL SLOT Q_SLOTS Q_SIGNALS
+syn keyword qtMoc connect disconnect emit slots signals
 
 " --- Qt Macros
 "
-syn keyword     cType           Q_ASSERT Q_CHECK_PTR Q_UNUSED
+syn keyword cType Q_ASSERT Q_CHECK_PTR Q_UNUSED
 
 " --- Qt other
 "
-syn keyword		Statement		qobject_cast foreach qgraphicsitem_cast
+syn keyword	Statement		qobject_cast foreach qgraphicsitem_cast
+
+" ---
+syn keyword myCls sreal
 
 " highlight Qt classes like build-in cpp types
 highlight link qClass Type
 highlight link qtMoc Type
+highlight link masCls Special
+"highlight link myCls My
 
