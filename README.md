@@ -12,7 +12,7 @@ copy files to  ( or symlinks )
 .vim/after/colors/neomorph.vim
 
 ### neomorph ###
-fork of neodark
+fork for neodark
 
 ### .tmux.conf ###
 too
