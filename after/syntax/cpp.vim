@@ -585,11 +585,11 @@ syn keyword cType Q_ASSERT Q_CHECK_PTR Q_UNUSED
 syn keyword	Statement		qobject_cast foreach qgraphicsitem_cast
 
 " ---
-syn keyword myCls sreal
+syn keyword myCls sreal ByteArray
 
 " highlight Qt classes like build-in cpp types
 highlight link qClass Type
 highlight link qtMoc Type
 highlight link masCls Special
-"highlight link myCls My
+highlight link myCls My
 

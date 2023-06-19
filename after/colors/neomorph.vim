@@ -169,6 +169,7 @@ let s:beige      = ['#C7C18B', 180]
 let s:light_blue = ['#72C7D1', 80]
 let s:brown      = ['#AE8785', 138]
 let s:maroon     = ['#600606', 52]
+let s:masa       = ['#acffc8', 110]
 
 if g:neodark#use_256color == 1
   let s:base1[0] = '#303030'
@@ -189,6 +190,8 @@ if g:neodark#use_256color == 1
   let s:light_blue[0] = '#5fd7d7'
   let s:brown[0]      = '#af8787'
   let s:maroon[0]     = '#610606'
+
+  let s:masa[0]       = '#acffc8'
 endif
 
 if g:neodark#use_custom_terminal_theme == 1
@@ -306,7 +309,7 @@ call s:hi('Underlined',                s:base5,      '',         'underline')
 call s:hi('Error',                     s:base2,      s:red,      'bold')
 call s:hi('Todo',                      s:maroon,     s:yellow,   'bold')
 call s:hi('Conceal',                   s:beige,      s:base1,    '')
-call s:hi('My',                        s:beige,      '',         '')
+call s:hi('My',                        s:masa,       '',         '')
 
 " Languages {{{
 " Vim {{{
