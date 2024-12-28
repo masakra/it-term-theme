@@ -566,7 +566,7 @@ syn keyword qClass QXmlStreamEntityDeclaration QXmlStreamEntityResolver
 syn keyword qClass QXmlStreamNamespaceDeclaration QXmlStreamNotationDeclaration
 syn keyword qClass QXmlStreamReader QXmlStreamWriter QXYLegendMarker QXYSeries
 " Not Qt classes
-syn keyword qClass QStringLiteral
+syn keyword qClass QStringLiteral QByteArrayLiteral
 
 " --- Qt keywords
 "
@@ -578,7 +578,7 @@ syn keyword qtMoc connect disconnect emit slots signals
 
 " --- Qt Macros
 "
-syn keyword cType Q_ASSERT Q_CHECK_PTR Q_UNUSED
+syn keyword cType Q_ASSERT Q_CHECK_PTR Q_UNUSED Q_EMIT
 
 " --- Qt other
 "
