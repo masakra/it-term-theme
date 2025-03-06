@@ -59,8 +59,8 @@ syn keyword qClass QAnimationGroup QAnimationGroup QAnyStringView QApplication
 syn keyword qClass QAreaLegendMarker QAreaSeries QArmature QAspectEngine
 syn keyword qClass QAspectJob QAssociativeIterable QAtomicInt QAtomicInteger
 syn keyword qClass QAtomicPointer QAttribute QAudioBuffer QAudioDecoder
-syn keyword qClass QAudioEncoderSettings QAudioRecorder
-syn keyword qClass QAudioDevice QAudioFormat QAudioInput QAudioOutput
+syn keyword qClass QAudioEncoderSettings QAudioRecorder QAudioDevice
+syn keyword qClass QAudioDeviceInfo QAudioFormat QAudioInput QAudioOutput
 syn keyword qClass QAudioSink QAudioSource QAuthenticator QAxAggregated QAxBase
 syn keyword qClass QAxBaseObject QAxBaseWidget QAxBindable QAxFactory QAxis
 syn keyword qClass QAxisAccumulator QAxisSetting QAxObject QAxObjectInterface
