@@ -109,6 +109,7 @@ alias si="sudo -i"
 alias ll="ls -l"
 alias la="ls -a"
 alias l="ls -la"
+alias tmux="tmux a || tmux"
 
 mkcd() {
     if [ -n "$1" ]

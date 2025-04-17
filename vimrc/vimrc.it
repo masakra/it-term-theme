@@ -1,0 +1,94 @@
+syntax on
+
+"set autoindent
+set cindent
+set expandtab
+set fileformat=unix
+set fileformats=unix,dos
+set incsearch
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl;'zxcvbnm.~QWERTYUIOP{}ASDFGHJKL\:\"ZXCVBNM<>
+set laststatus=2
+set nowrap
+set number
+set shiftwidth=2
+set smartindent
+set smarttab
+set statusline=%<[%n]\ %f\ %m%r%h%w\ %y\ %{&fileencoding}%=%b\ \ \ %c/%v\ %l/%L\ \ %P\ %a
+set tabstop=2
+set t_Co=256
+set ve=all
+set listchars=tab:┌─┐
+set nohlsearch
+set modelines=1
+
+set spelllang=ru
+autocmd BufRead, BufNewFile *.tex set spell
+
+" Auto generate tags file on file write of *.c or *.cpp and *.h files
+" autocmd BufWritePost *.c,*.cpp,*.h silent! !ctags . &
+
+" Hightlight 81 column
+highlight ColorColumn ctermbg=4
+set colorcolumn=81
+
+" Должно быть после set t_Co
+colorscheme neomorph
+
+imap jj <ESC>
+imap оо <ESC>
+
+nnoremap <TAB> %
+vnoremap <TAB> %
+
+nnoremap <C-]> <C-w><C-]><C-w>T
+vnoremap <C-]> <ESC><C-w><C-]><C-w>T
+
+set wildmenu
+set wcm=<Tab>
+menu Encoding.Windows-1251 :e ++enc=cp1251<CR>
+menu Encoding.UTF-8        :e ++enc=utf-8<CR>
+map <F8> :emenu Encoding.<TAB>
+
+nmap j :wall<CR>
+imap j <ESC>:wall<CR>
+
+iab today <C-R>=strftime("%d.%m.%Y (%H:%M MSK)")<CR>
+iab inc #include
+iab def #define
+iab once #pragma once
+iab fn function() {<CR>}<ESC>O<C-H>
+
+" sorting
+vmap ,s :sort<CR>
+" C++ method routine
+nmap ,f 0d^f;xF(F s<CR>::<ESC>o{<CR>}<CR><ESC>kkkI
+" Commet argument's default value
+nmap ,* f=hs/*<ESC>2f s*/<ESC>
+" Close word into `"'
+nmap ," Bi"<ESC>Ea"<ESC>
+" Close word into `''
+nmap ,' Bi'<ESC>Ea'<ESC>
+" Close word into ( )
+nmap ,( Bi( <ESC>Ea )<ESC>
+nmap ,) Bi( <ESC>Ea )<ESC>
+" Comment speed up
+nmap ,c i/**<CR>/<ESC>I <ESC>kA 
+" qWarning with GOT
+nmap ,g oqWarning() << "GOT" << Q_FUNC_INFO;<ESC>
+
+
+" clang_complete
+let g:clang_library_path='/usr/lib/x86_64-linux-bnu/libclang-cpp.so.11'
+
+"set omnifunc=syntaxcomplete#Complete
+"filetype plugin on
+"au FileType cpp setl ofu=ccomplete#CompleteCpp
+set omnifunc=''
+inoremap <Nul> <C-x><C-o>
+inoremap c.l console.log( );<ESC>hi
+inoremap c.w console.warn( );<ESC>hi
+
+" Висячие пробелы
+:au BufNewFile,BufRead * let b:mtrailingws=matchadd('ErrorMsg', '\s\+$', -1)
+:au BufNewFile,BufRead * let b:mtabaftersp=matchadd('ErrorMsg', '\v( +)\zs(\t+)', -1)
+
