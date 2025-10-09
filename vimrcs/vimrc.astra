@@ -75,8 +75,7 @@ nmap ,c i/**<CR>/<ESC>I <ESC>kA
 " qWarning with GOT
 nmap ,g oqWarning() << "GOT" << Q_FUNC_INFO;<ESC>
 " fprintf(stderr, "GOT %s\n", Q_FUNC_INFO);
-nmap ,e fprintf(stderr, "GOT %s\n", Q_FUNC_INFO);<ESC>F\
-
+nmap ,e ofprintf(stderr, "GOT %s\n", Q_FUNC_INFO);<ESC>F\
 
 " clang_complete
 let g:clang_library_path='/usr/lib/x86_64-linux-bnu/libclang-cpp.so.11'
