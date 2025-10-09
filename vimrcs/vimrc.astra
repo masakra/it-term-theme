@@ -26,7 +26,7 @@ set spelllang=ru
 autocmd BufRead, BufNewFile *.tex set spell
 
 " Auto generate tags file on file write of *.c or *.cpp and *.h files
-autocmd BufWritePost *.c,*.cpp,*.h silent! !ctags . &
+" autocmd BufWritePost *.c,*.cpp,*.h silent! !ctags . &
 
 " Hightlight 81 column
 highlight ColorColumn ctermbg=4
@@ -74,6 +74,8 @@ nmap ,) Bi( <ESC>Ea )<ESC>
 nmap ,c i/**<CR>/<ESC>I <ESC>kA 
 " qWarning with GOT
 nmap ,g oqWarning() << "GOT" << Q_FUNC_INFO;<ESC>
+" fprintf(stderr, "GOT %s\n", Q_FUNC_INFO);
+nmap ,e fprintf(stderr, "GOT %s\n", Q_FUNC_INFO);<ESC>F\
 
 
 " clang_complete
