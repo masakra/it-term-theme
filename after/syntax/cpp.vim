@@ -58,7 +58,7 @@ syn keyword qClass QAnimationClipData QAnimationClipLoader QAnimationController
 syn keyword qClass QAnimationGroup QAnimationGroup QAnyStringView QApplication
 syn keyword qClass QAreaLegendMarker QAreaSeries QArmature QAspectEngine
 syn keyword qClass QAspectJob QAssociativeIterable QAtomicInt QAtomicInteger
-syn keyword qClass QAtomicPointer QAttribute QAudioBuffer QAudioDecoder
+syn keyword qClass QAtomicPointer QAttribute QAudio QAudioBuffer QAudioDecoder
 syn keyword qClass QAudioEncoderSettings QAudioRecorder QAudioDevice
 syn keyword qClass QAudioDeviceInfo QAudioFormat QAudioInput QAudioOutput
 syn keyword qClass QAudioSink QAudioSource QAuthenticator QAxAggregated QAxBase
@@ -584,7 +584,7 @@ syn keyword cType Q_DECLARE_TR_FUNCTIONS
 
 " --- Qt other
 "
-syn keyword	Statement qobject_cast foreach qgraphicsitem_cast
+syn keyword	Statement qobject_cast foreach qgraphicsitem_cast fallthrough
 
 " ---
 syn keyword myCls sreal
