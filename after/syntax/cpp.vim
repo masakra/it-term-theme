@@ -579,7 +579,7 @@ syn keyword qtMoc connect disconnect emit slots signals
 
 " --- Qt Macros
 "
-syn keyword cType Q_ASSERT Q_CHECK_PTR Q_UNUSED Q_EMIT Q_ENUM
+syn keyword cType Q_ASSERT Q_CHECK_PTR Q_UNUSED Q_EMIT Q_ENUM Q_ENUM_NS
 syn keyword cType Q_DECLARE_TR_FUNCTIONS
 
 " --- Qt other

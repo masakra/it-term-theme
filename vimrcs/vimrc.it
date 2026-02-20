@@ -63,7 +63,7 @@ vmap ,s :sort<CR>
 " C++ method routine
 nmap ,f 0d^f;xF(F s<CR>::<ESC>o{<CR>}<CR><ESC>kkkI
 " Commet argument's default value
-nmap ,* f=hs/*<ESC>2f s*/<ESC>
+nmap ,* f=hs/*<ESC>$lF)i*/<ESC>
 " Close word into `"'
 nmap ," Bi"<ESC>Ea"<ESC>
 " Close word into `''
@@ -75,7 +75,8 @@ nmap ,) Bi( <ESC>Ea )<ESC>
 nmap ,c i/**<CR>/<ESC>I <ESC>kA 
 " qWarning with GOT
 nmap ,g oqWarning() << "GOT" << Q_FUNC_INFO;<ESC>
-
+" qDebug with Q_FUNC_INFO
+nmap ,d oqDebug() << Q_FUNC_INFO;<ESC>i << 
 
 " clang_complete
 let g:clang_library_path='/usr/lib/x86_64-linux-bnu/libclang-cpp.so.11'
@@ -85,8 +86,8 @@ let g:clang_library_path='/usr/lib/x86_64-linux-bnu/libclang-cpp.so.11'
 "au FileType cpp setl ofu=ccomplete#CompleteCpp
 set omnifunc=''
 inoremap <Nul> <C-x><C-o>
-inoremap c.l console.log( );<ESC>hi
-inoremap c.w console.warn( );<ESC>hi
+inoremap c.l console.log()<ESC>i
+inoremap c.w console.warn()<ESC>i
 
 " Висячие пробелы
 :au BufNewFile,BufRead * let b:mtrailingws=matchadd('ErrorMsg', '\s\+$', -1)
