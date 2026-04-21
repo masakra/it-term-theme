@@ -122,6 +122,7 @@ alias sap="sudo apt purge"
 alias sapf="sudo dpkg -P --force-depends"
 alias mbd="mk-build-deps -i -r"
 alias dbp="rm .gitlab-ci.yml; dpkg-buildpackage -us -uc -ui -j16 && rm ../*dbgsym*.deb"
+alias jc="journalctl"
 
 export DEBEMAIL="schursanov@astralinux.ru"
 export DEBFULLNAME="Sergey N Chursanov"
